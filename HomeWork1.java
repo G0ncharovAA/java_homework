@@ -37,14 +37,14 @@ public class HomeWork1 {
         ArrayList<Integer> output = new ArrayList<Integer>();
 
         for (int index = start; index <= end; index++) {
-            if (index != 0 &&
+            if (target != 0 &&
                     positive &&
-                    target % index == 0) {
+                    index % target == 0) {
                 output.add(index);
             }
-            if (index != 0 &&
+            if (target != 0 &&
                     !positive &&
-                    target % index != 0) {
+                    index % target != 0) {
                 output.add(index);
             }
         }
