@@ -64,7 +64,7 @@ public class HomeWork1 {
         System.out.println("i = " + i);
 
         // 2. Посчитать и сохранить в n номер старшего значащего бита выпавшего числа
-        int n = getMostSignificantBit(i);
+        int n = getMostSignificantBit(Math.abs(i));
         System.out.println("n = " + n);
 
         // 3. Найти все кратные n числа в диапазоне от i до Short.MAX_VALUE сохранить в массив m1
