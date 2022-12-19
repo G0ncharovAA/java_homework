@@ -1,6 +1,6 @@
 package com.example.playground.OOP_interface;
 
-public class Duck extends Animal implements Speakable,Runable,Flyable {
+public class Duck extends Animal implements Speakable, Runable, Flyable, Swimable {
 
     public Duck(String nickname, int legs, String owner) {
         super(nickname, legs, owner);
@@ -19,6 +19,11 @@ public class Duck extends Animal implements Speakable,Runable,Flyable {
     @Override
     public String speak() {
         return "Krya";
+    }
+
+    @Override
+    public float swimSpeed() {
+        return 10.2f;
     }
 
     @Override
